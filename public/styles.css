@@ -1,0 +1,61 @@
+/* ARTICLE PREVIEW  */
+.article-preview {
+    border-top: unset;
+}
+
+/* PAGINATION  */
+.page-link {
+    width: 50px;
+    height: 50px;
+    margin: unset;
+    padding-top: 10px;
+    text-align: center;
+}
+.pagination {
+    padding: revert;
+}
+
+/* GENERAL */
+.order-1 {
+    order: 1;
+}
+.home-page .banner {
+    background-image: url("assets/images/books.jpg");
+    background-size: cover;
+    min-height: 300px;
+}
+
+/* COLORS */
+.navbar-brand,
+a, a:hover,
+.btn-outline-primary,
+.page-link, .page-link:hover,
+.navbar-light .navbar-nav .nav-link,
+.btn-primary {
+    color: hotpink;
+    border-color: hotpink;
+    background: none;
+}
+
+.nav-pills.outline-active .nav-link.active,
+.navbar-light .navbar-brand {
+    color: hotpink !important;
+    border-color: hotpink !important;
+    font-weight: bold;
+}
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+    background-color: hotpink;
+    border-color: hotpink;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover,
+.btn-outline-primary:active:hover, 
+.btn-outline-primary:active:focus, 
+.btn-outline-primary:active.focus, 
+.btn-outline-primary.active:hover, .btn-outline-primary.active:focus, .btn-outline-primary.active.focus, .open>.btn-outline-primary.dropdown-toggle:hover, .open>.btn-outline-primary.dropdown-toggle:focus, .open>.btn-outline-primary.dropdown-toggle.focus
+ {
+    color: white;
+    background-color: hotpink;
+    border-color: hotpink;
+}
