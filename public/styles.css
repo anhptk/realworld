@@ -30,6 +30,10 @@
 .navbar-brand,
 a,
 a:hover,
+a:active,
+a:focus,
+a:visited,
+a.active,
 .btn-outline-primary,
 .page-link,
 .page-link:hover,
@@ -51,9 +55,16 @@ a:hover,
 .page-item.active .page-link:hover {
   background-color: hotpink;
   border-color: hotpink;
+  color: white;
 }
 
 .btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
 .btn-outline-primary:hover,
 .btn-outline-primary:active:hover,
 .btn-outline-primary:active:focus,

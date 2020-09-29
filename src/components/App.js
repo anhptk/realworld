@@ -31,7 +31,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 class App extends React.Component {
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (nextProps.redirectTo) {
       // this.context.router.replace(nextProps.redirectTo);
       store.dispatch(push(nextProps.redirectTo));
@@ -39,7 +39,7 @@ class App extends React.Component {
     }
   }
 
-  UNSAFE_componentWillMount() {
+  componentWillMount() {
     const token = window.localStorage.getItem("jwt");
     if (token) {
       agent.setToken(token);

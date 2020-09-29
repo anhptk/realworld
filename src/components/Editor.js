@@ -103,6 +103,7 @@ class Editor extends React.Component {
                 <fieldset>
                   <fieldset className="form-group">
                     <input
+                      required
                       className="form-control form-control-lg"
                       type="text"
                       placeholder="Post Title"
@@ -113,6 +114,7 @@ class Editor extends React.Component {
 
                   <fieldset className="form-group">
                     <input
+                      required
                       className="form-control"
                       type="text"
                       placeholder="Post Description"
@@ -123,6 +125,7 @@ class Editor extends React.Component {
 
                   <fieldset className="form-group">
                     <textarea
+                      required
                       className="form-control"
                       rows="8"
                       placeholder="Post content..."
