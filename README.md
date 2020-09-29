@@ -15,9 +15,9 @@ You can view the live version at: [https://codesandbox.io/s/kind-driscoll-k8ddx]
 ``` components/Header.js```: Show the page header (menu + banner)
 
 ### Page components
-```components/Home/index.js```: Homepage
-```components/Login.js```: Login page
-```components/Register.js```: Register page
-```components/Editor.js```: Create a new post
-```components/Settings.js```: Edit user info page
+- ```components/Home/index.js```: Homepage
+- ```components/Login.js```: Login page
+- ```components/Register.js```: Register page
+- ```components/Editor.js```: Create a new post
+- ```components/Settings.js```: Edit user info page
 
