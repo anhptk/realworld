@@ -1,11 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const LoggedOutView = props => {
+const LoggedOutView = (props) => {
   if (!props.currentUser) {
     return (
       <ul className="nav navbar-nav pull-xs-right">
-
         <li className="nav-item">
           <Link to="/" className="nav-link">
             Home
@@ -23,25 +22,29 @@ const LoggedOutView = props => {
             Sign up
           </Link>
         </li>
-
       </ul>
     );
   }
   return null;
 };
 
-const LoggedInView = props => {
+const LoggedInView = (props) => {
   if (props.currentUser) {
     const userImage = () => {
       if (props.currentUser.image) {
-        return (<img src={props.currentUser.image} className="user-pic" alt={props.currentUser.username} />        )
+        return (
+          <img
+            src={props.currentUser.image}
+            className="user-pic"
+            alt={props.currentUser.username}
+          />
+        );
       } else {
-        return (<div></div>);
+        return <div></div>;
       }
-    }
+    };
     return (
       <ul className="nav navbar-nav pull-xs-right">
-
         <li className="nav-item">
           <Link to="/" className="nav-link">
             Home
@@ -54,12 +57,8 @@ const LoggedInView = props => {
           </Link>
         </li>
 
-
-
         <li className="nav-item">
-          <Link
-            to={`/@${props.currentUser.username}`}
-            className="nav-link">
+          <Link to={`/@${props.currentUser.username}`} className="nav-link">
             {userImage()}
             View Profile
           </Link>
@@ -81,7 +80,6 @@ class Header extends React.Component {
     return (
       <nav className="navbar navbar-light">
         <div className="container">
-
           <Link to="/" className="navbar-brand">
             {this.props.appName.toLowerCase()}
           </Link>
